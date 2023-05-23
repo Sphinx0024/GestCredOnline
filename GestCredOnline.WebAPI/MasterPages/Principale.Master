@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principale.master.cs" Inherits="GestCredOnline.WebAPI.MasterPages.Principale" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GestCred </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Demande de credits pour les clients particuliers de la BNI">
+    <meta name="keywords"   content="BNI, CREDIT">
+    <meta name="author" content="Activ'">
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="files/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!-- ICONS -->
+    <!-- feather Awesome -->
+    <link href="/Assets/icon/feather/css/feather.css" rel="stylesheet" />
+    <link href="/Assets/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Required CSS -->
+    <link type="text/css" href="/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/lib/chosen/css/chosen.min.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/css/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/lib/gritter/jquery.gritter.min.css" rel="stylesheet" />
+    <link type="text/css" href="/Assets/css/autoComplete.css" rel="stylesheet" />
+     
+    <%--  Custom CSS--%>
+    <link href="/Assets/lib/ace/css/ace.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/Assets/lib/ace/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="/Assets/lib/ace/css/ace-rtl.min.css" />
+     <script type="text/javascript" src="/Assets/js/appConfig.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Attention!!</h1>
+    <p>Vous utilisez un navigateur beaucoup trop ancien, Veuillez le mettre à jour  <br/>Nous vous recommendons les navigateurs suivants afin de mieux profiter de notre outils.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="./files/assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="./files/assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="./files/assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="./files/assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <p>Nous sommes navré du désagrement occasionné!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+
+    <script type="text/javascript" src="/Assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="/Assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="/Assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="/Assets/lib/autoNumeric/autoNumeric.min.js"></script>
+    <script type="text/javascript" src="/Assets/lib/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="/Assets/lib/chosen/js/chosen.jquery.min.js"></script> 
+    <script type="text/javascript" src="/Assets/lib/gritter/jquery.gritter.min.js"></script>
+    <script type="text/javascript" src="/Assets/lib/bootbox/bootbox.js"></script>
+    <script type="text/javascript" src="/Assets/js/pcoded.min.js"></script> 
+    <script type="text/javascript" src="/Assets/js/appFolder.js"></script>
+    <script type="text/javascript" src="/Assets/js/appHelper.js"></script>
+    <script type="text/javascript" src="/Assets/js/helper.js"></script>
+    <script type="text/javascript" src="/Assets/js/autoCompletion.js"></script> 
+    <script type="text/javascript" src="/Assets/js/vartical-layout.min.js"></script>
+
+    <script type="text/javascript" >    
+        $(document).ready(function () {
+
+            if (!(localStorage.getItem(appConfig.connectConnected))) {
+                location.href = 'login.aspx';
+            }
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+            $('.theme-loader').fadeOut('slow', function () {
+                $(this).remove();
+            });
+           
+        });
+    </script> 
+    <!-- Js -->
+    <asp:ContentPlaceHolder ID="FooterContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

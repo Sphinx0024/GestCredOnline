@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07b38ea1d32c499397d5ee87695e3507" Name="Diagram1" ZoomLevel="114">
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.Client" Width="2" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.EmployeurContrat" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.Fichier" Width="2.125" PointX="8.125" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.PieceType" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.ProductProgram" Width="1.75" PointX="5.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.ProductProgramCheckList" Width="2.125" PointX="7.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.RegimeMatrimonial" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Client_EmployeurContrat" ManuallyRouted="false" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Client_PieceType" ManuallyRouted="false" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Client_RegimeMatrimonial" ManuallyRouted="false" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_ProductProgramCheckList_ProductProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Fichier_ProductProgramCheckList" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.Request" Width="1.5" PointX="11.875" PointY="1.625" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Request_Client" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Fichier_Request" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Request_ProductProgram" />
+        <AssociationConnector Association="GestCredOnline_DBModel.FK_Request_Request" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.EntreprisesAgrees" Width="1.5" PointX="6.375" PointY="8.75" />
+        <EntityTypeShape EntityType="GestCredOnline_DBModel.Notification" Width="1.5" PointX="8.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

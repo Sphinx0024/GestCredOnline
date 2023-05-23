@@ -1,0 +1,266 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5F3B4AE-AFD7-4D97-91C6-2496AAEC6721}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestCredOnline.WebUI</RootNamespace>
+    <AssemblyName>GestCredOnline.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\autoComplete.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\jquery-ui-1.10.0.custom.css" />
+    <Content Include="Assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\font\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\icon\feather\css\feather.css" />
+    <Content Include="Assets\icon\icofont\css\icofont.css" />
+    <Content Include="Assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="Assets\img\avatar_profile.png" />
+    <Content Include="Assets\img\bni.jfif" />
+    <Content Include="Assets\js\appConfig.js" />
+    <Content Include="Assets\js\appFolder.js" />
+    <Content Include="Assets\js\appHelper.js" />
+    <Content Include="Assets\js\autoCompletion.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\helper.js" />
+    <Content Include="Assets\js\jquery-ui.min.js" />
+    <Content Include="Assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Assets\js\jquery.min.js" />
+    <Content Include="Assets\js\jquery.slimscroll.js" />
+    <Content Include="Assets\js\modernizr.js" />
+    <Content Include="Assets\js\pcoded.min.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\SmoothScroll.js" />
+    <Content Include="Assets\js\vartical-layout.min.js" />
+    <Content Include="Assets\lib\ace\css\ace-ie.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-part2.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-rtl.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-skins.min.css" />
+    <Content Include="Assets\lib\ace\css\ace.min.css" />
+    <Content Include="Assets\lib\ace\js\ace-editable.min.js" />
+    <Content Include="Assets\lib\ace\js\ace-elements.min.js" />
+    <Content Include="Assets\lib\ace\js\ace-extra.min.js" />
+    <Content Include="Assets\lib\ace\js\ace.min.js" />
+    <Content Include="Assets\lib\autoNumeric\autoNumeric.min.js" />
+    <Content Include="Assets\lib\bootbox\bootbox.js" />
+    <Content Include="Assets\lib\chosen\css\chosen.min.css" />
+    <Content Include="Assets\lib\chosen\js\chosen.jquery.min.js" />
+    <Content Include="Assets\lib\data-table\css\buttons.dataTables.min.css" />
+    <Content Include="Assets\lib\data-table\js\data-table-custom.js" />
+    <Content Include="Assets\lib\data-table\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Assets\lib\data-table\js\jszip.min.js" />
+    <Content Include="Assets\lib\data-table\js\pdfmake.min.js" />
+    <Content Include="Assets\lib\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\buttons.html5.min.js" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\buttons.print.min.js" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="Assets\lib\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="Assets\lib\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="Assets\lib\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="Assets\lib\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="Assets\lib\gritter\css\jquery.gritter.min.css" />
+    <Content Include="Assets\lib\gritter\jquery.gritter.min.css" />
+    <Content Include="Assets\lib\gritter\jquery.gritter.min.js" />
+    <Content Include="Assets\lib\gritter\js\jquery.gritter.min.js" />
+    <Content Include="Assets\lib\jquery-validation\jquery.validate.js" />
+    <Content Include="Assets\lib\jquery.steps\jquery.steps.css" />
+    <Content Include="Assets\lib\jquery.steps\jquery.steps.js" />
+    <Content Include="Assets\lib\moment\moment.min.js" />
+    <Content Include="Assets\lib\mustache\mustache.min.js" />
+    <Content Include="Assets\lib\mustache\README.md" />
+    <Content Include="Assets\lib\underscore\underscore-min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Pages\index.aspx" />
+    <Content Include="Pages\login.aspx" />
+    <Content Include="Pages\simulation.aspx" />
+    <Content Include="Pages\souscription_add.aspx" />
+    <Content Include="Pages\souscription_details.aspx" />
+    <Content Include="Pages\souscription_list.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Contenu.master.cs">
+      <DependentUpon>Contenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Contenu.master.designer.cs">
+      <DependentUpon>Contenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Principale.Master.cs">
+      <DependentUpon>Principale.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Principale.Master.designer.cs">
+      <DependentUpon>Principale.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\simulation.aspx.cs">
+      <DependentUpon>simulation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\simulation.aspx.designer.cs">
+      <DependentUpon>simulation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_add.aspx.cs">
+      <DependentUpon>souscription_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_add.aspx.designer.cs">
+      <DependentUpon>souscription_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_details.aspx.cs">
+      <DependentUpon>souscription_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_details.aspx.designer.cs">
+      <DependentUpon>souscription_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_list.aspx.cs">
+      <DependentUpon>souscription_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_list.aspx.designer.cs">
+      <DependentUpon>souscription_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\icon\feather\fonts\feather.woff" />
+    <Content Include="Assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="MasterPages\Contenu.master" />
+    <Content Include="MasterPages\Principale.Master" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+07/04/2023 17:22:14 :: Connexion
+07/04/2023 17:22:14 :: Entete de requete
+07/04/2023 17:22:14 :: Contenu de requete
+07/04/2023 17:22:14 :: Envoi de requete
+07/04/2023 17:22:14 :: Reponse de requete
+07/04/2023 17:22:14 :: 
+{
+  "token_type": "Bearer",
+  "access_token": "eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgwODkxNzM1LCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgwODg4MTM1LCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImI4NGRhYzU2LTUwNjMtNGQ4Ni04YTQzLTRlMThlMmE4N2ZlNiJ9.SFi4GNsropwrRn16yemNQMF0PhPLzvUSH_cJMNwCJXeTotYCGuq0RMaV5iLKYcGRuJHZomO4LwUnO0fn9qZtngGimHD3ruDOpnZ2d9RbaMrJwx-oxcsEyKd0ggYGKDMj",
+  "expires_in": 3600
+}
+        
+07/04/2023 17:22:15 :: Traitement de la reponse
+07/04/2023 17:22:15 :: eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgwODkxNzM1LCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgwODg4MTM1LCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImI4NGRhYzU2LTUwNjMtNGQ4Ni04YTQzLTRlMThlMmE4N2ZlNiJ9.SFi4GNsropwrRn16yemNQMF0PhPLzvUSH_cJMNwCJXeTotYCGuq0RMaV5iLKYcGRuJHZomO4LwUnO0fn9qZtngGimHD3ruDOpnZ2d9RbaMrJwx-oxcsEyKd0ggYGKDMj
+07/04/2023 17:22:15 :: Envoi SMS
+07/04/2023 17:22:15 :: {"outboundSMSMessageRequest": {"address": "tel:+2250747683181","outboundSMSTextMessage": {"message": "test oooooo"},"senderAddress": "tel:+2250747683181","senderName": "BNI"}}
+07/04/2023 17:22:16 :: {"outboundSMSMessageRequest":{"address":["tel:+2250747683181"],"senderAddress":"tel:+2250747683181","senderName":"BNI","outboundSMSTextMessage":{"message":"test oooooo"},"resourceURL":"https://api.orange.com/smsmessaging/v1/outbound/tel:+2250747683181/requests/81b00346-c737-4849-ba30-bf67ddab40b5"}}
+07/04/2023 17:22:16 :: Connexion
+07/04/2023 17:22:16 :: Entete de requete
+07/04/2023 17:22:16 :: Contenu de requete
+07/04/2023 17:22:16 :: Envoi de requete
+07/04/2023 17:22:16 :: Reponse de requete
+07/04/2023 17:22:16 :: 
+{
+  "token_type": "Bearer",
+  "access_token": "eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgwODkxNzM3LCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgwODg4MTM3LCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImIyNTMzNjlkLTA4MDQtNGE0ZC1iODllLTE3OGJlODlhYTU4OCJ9.yW_ro2aTHg9BHfyzW3Lt2iFtzqra5dgyX83TBSv52bK67aw-eAI2JIVYQGc-vmdYM9OcZ6zzwhIm0oFSA_dW6J-v8njJ38ZPlJo3eTXV_u-QuAx_uNXOpJeVaLKQdZzT",
+  "expires_in": 3600
+}
+        
+07/04/2023 17:22:16 :: Traitement de la reponse
+07/04/2023 17:22:16 :: eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgwODkxNzM3LCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgwODg4MTM3LCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImIyNTMzNjlkLTA4MDQtNGE0ZC1iODllLTE3OGJlODlhYTU4OCJ9.yW_ro2aTHg9BHfyzW3Lt2iFtzqra5dgyX83TBSv52bK67aw-eAI2JIVYQGc-vmdYM9OcZ6zzwhIm0oFSA_dW6J-v8njJ38ZPlJo3eTXV_u-QuAx_uNXOpJeVaLKQdZzT
+07/04/2023 17:22:16 :: Envoi SMS
+07/04/2023 17:22:16 :: {"outboundSMSMessageRequest": {"address": "tel:+2250768653272","outboundSMSTextMessage": {"message": "test depuis mon service "},"senderAddress": "tel:+2250747683181","senderName": "BNI"}}
+07/04/2023 17:22:17 :: {"outboundSMSMessageRequest":{"address":["tel:+2250768653272"],"senderAddress":"tel:+2250747683181","senderName":"BNI","outboundSMSTextMessage":{"message":"test depuis mon service "},"resourceURL":"https://api.orange.com/smsmessaging/v1/outbound/tel:+2250747683181/requests/65a7b874-f0d9-4767-96a8-240816dcd03f"}}
+07/04/2023 17:30:23 :: Service est arreté ...

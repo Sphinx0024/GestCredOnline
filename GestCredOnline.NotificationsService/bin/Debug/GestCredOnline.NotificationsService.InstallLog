@@ -1,0 +1,9 @@
+﻿Désinstallation de l'assembly 'D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.InstallLog
+   assemblypath = D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe
+Suppression de la source EventLog SrvNotifications.
+Le service SrvNotifications est en cours de suppression du système...
+Le service SrvNotifications a été retiré avec succès du système.
+Tentative d'arrêt du service SrvNotifications.

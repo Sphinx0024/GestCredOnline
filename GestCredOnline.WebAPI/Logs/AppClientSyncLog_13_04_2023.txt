@@ -1,0 +1,15 @@
+13/04/2023 09:59:29 :: Connexion
+13/04/2023 09:59:29 :: Entete de requete
+13/04/2023 09:59:30 :: Reponse de requete
+13/04/2023 09:59:30 :: 
+{
+  "token_type": "Bearer",
+  "access_token": "eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgxMzgzNTcyLCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgxMzc5OTcyLCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImVjOTU5Y2Q4LTk4NjYtNGU0MC04MmExLTk0MGVkMjIyMWM2MyJ9.NZKHu84zOToJR93mvahr31E-MBt1v-e6ibxT94VBa5bXW0lLg91MxFdk9fbxN3UFNoiBBZIReYQja8U5fhnuoYdVBDAdC2cJf-EycmowccrdBvPKtPiiDhDTLN8rw7C-",
+  "expires_in": 3600
+}
+        
+13/04/2023 09:59:30 :: Traitement de la reponse
+13/04/2023 09:59:30 :: eyJ2ZXIiOiIxLjAiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzM4NCIsImtpZCI6ImRzRUN2TDVaTENQbTl1R081RHltUjZCRTdMcnFGak5hX1VKbl9Ody1zdVUifQ.eyJhcHBfbmFtZSI6Ikdlc3RDcmVkIE9ubGluZSAiLCJzdWIiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImlzcyI6Imh0dHBzOlwvXC9hcGkub3JhbmdlLmNvbVwvb2F1dGhcL3YzIiwiZXhwIjoxNjgxMzgzNTcyLCJhcHBfaWQiOiJJRUlTVVNIMWU4c0tEV3B0IiwiaWF0IjoxNjgxMzc5OTcyLCJjbGllbnRfaWQiOiJ6TEJBR3U4VGhjWENGZDVNQjV0RGg0N0VsQUdBOG9PYSIsImp0aSI6ImVjOTU5Y2Q4LTk4NjYtNGU0MC04MmExLTk0MGVkMjIyMWM2MyJ9.NZKHu84zOToJR93mvahr31E-MBt1v-e6ibxT94VBa5bXW0lLg91MxFdk9fbxN3UFNoiBBZIReYQja8U5fhnuoYdVBDAdC2cJf-EycmowccrdBvPKtPiiDhDTLN8rw7C-
+13/04/2023 09:59:31 :: Envoi SMS
+13/04/2023 09:59:31 :: {"outboundSMSMessageRequest": {"address": "tel:+2250747683181","outboundSMSTextMessage": {"message": "OTP de connexion BNI-GestCred : 4k_Yf_"},"senderAddress": "tel:+2250747683181","senderName": "BNI"}}
+13/04/2023 09:59:32 :: {"outboundSMSMessageRequest":{"address":["tel:+2250747683181"],"senderAddress":"tel:+2250747683181","senderName":"BNI","outboundSMSTextMessage":{"message":"OTP de connexion BNI-GestCred : 4k_Yf_"},"resourceURL":"https://api.orange.com/smsmessaging/v1/outbound/tel:+2250747683181/requests/98e9a645-179f-426c-800b-98f035c286e0"}}

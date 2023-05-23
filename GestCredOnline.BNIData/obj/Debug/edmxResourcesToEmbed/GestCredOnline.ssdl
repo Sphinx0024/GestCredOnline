@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestCredOnline_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="PersonID" />
+    </Key>
+    <Property Name="PersonID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+    <Property Name="Prenom" Type="varchar" MaxLength="50" />
+    <Property Name="AccountRacine" Type="varchar" MaxLength="10" />
+    <Property Name="Sexe" Type="varchar" MaxLength="1" />
+    <Property Name="Civilite" Type="varchar" MaxLength="50" />
+    <Property Name="DateNaissance" Type="datetime" />
+    <Property Name="LieuNaissance" Type="varchar" MaxLength="250" />
+    <Property Name="PieceTypeID" Type="int" />
+    <Property Name="PieceNumero" Type="varchar" MaxLength="250" />
+    <Property Name="PieceDateEtablissement" Type="datetime" />
+    <Property Name="PieceDateExpiration" Type="datetime" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="50" />
+    <Property Name="OfficePhone" Type="varchar" MaxLength="50" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="50" />
+    <Property Name="AddressVille" Type="varchar" MaxLength="50" />
+    <Property Name="AddressQuartier" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLot" Type="varchar" MaxLength="50" />
+    <Property Name="RegimeMatrimonialID" Type="int" />
+    <Property Name="ConjointNom" Type="varchar" MaxLength="50" />
+    <Property Name="ConjointPrenom" Type="varchar" MaxLength="50" />
+    <Property Name="ConjointDomicil" Type="varchar" MaxLength="50" />
+    <Property Name="ConjointPhone" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeurNom" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeurContratID" Type="int" />
+    <Property Name="EmployeurDateEmbauche" Type="datetime" />
+    <Property Name="Profession" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeurAdrPost" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeurAdrGeo" Type="varchar" MaxLength="250" />
+    <Property Name="EmployeurPhone" Type="varchar" MaxLength="50" />
+    <Property Name="Salaire" Type="int" />
+    <Property Name="RevenuLocatif" Type="int" />
+    <Property Name="RevenuAgricole" Type="int" />
+    <Property Name="RevenuAutre" Type="int" />
+    <Property Name="RevenuTotal" Type="int" />
+    <Property Name="EmployeurDateFinContrat" Type="datetime" />
+    <Property Name="NbEnfant" Type="int" />
+    <Property Name="EmployeurFonction" Type="varchar" MaxLength="250" />
+    <Property Name="EmployeurMatricule" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6013: Aucune clé primaire n'est définie pour la table/vue 'BNI_Client_Apps_DB.dbo.ClientOTP' ; en outre, aucune clé primaire valide n'a pu être déduite. Cette table/vue a été exclue. Pour utiliser l'entité, vous devez passer en revue votre schéma, ajouter les clés appropriées et supprimer le commentaire associé.
+        <EntityType Name="ClientOTP">
+          <Property Name="Racine" Type="varchar" MaxLength="10" />
+          <Property Name="OTP" Type="varchar" MaxLength="8" />
+          <Property Name="DateDemande" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="EmployeurContrat">
+    <Key>
+      <PropertyRef Name="EmployeurContratID" />
+    </Key>
+    <Property Name="EmployeurContratID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fichier">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RequestID" Type="bigint" />
+    <Property Name="Path" Type="text" />
+    <Property Name="SyncStatut" Type="tinyint" />
+    <Property Name="OnlineUrl" Type="varchar" MaxLength="250" />
+    <Property Name="CheckListID" Type="bigint" />
+    <Property Name="File_Data" Type="varbinary(max)" />
+    <Property Name="File_MimeType" Type="varchar" MaxLength="50" />
+    <Property Name="File_Name" Type="varchar" MaxLength="255" />
+    <Property Name="File_Size" Type="int" />
+  </EntityType>
+  <EntityType Name="PieceType">
+    <Key>
+      <PropertyRef Name="PieceTypeID" />
+    </Key>
+    <Property Name="PieceTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProductProgram">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+    <Property Name="Taux" Type="float" />
+    <Property Name="Duree" Type="float" />
+    <Property Name="Frais" Type="float" />
+    <Property Name="Commission" Type="float" />
+    <Property Name="DateDebut" Type="smalldatetime" />
+    <Property Name="DateFin" Type="smalldatetime" />
+    <Property Name="Commentaires" Type="text" />
+    <Property Name="TypeDemande" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ProductProgramCheckList">
+    <Key>
+      <PropertyRef Name="CheckListID" />
+    </Key>
+    <Property Name="CheckListID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductProgramID" Type="bigint" />
+    <Property Name="Createur" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreation" Type="smalldatetime" />
+    <Property Name="Modificateur" Type="varchar" MaxLength="50" />
+    <Property Name="DateModification" Type="smalldatetime" />
+    <Property Name="Libelle" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="RegimeMatrimonial">
+    <Key>
+      <PropertyRef Name="RegimeMatrimonialID" />
+    </Key>
+    <Property Name="RegimeMatrimonialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Request">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ref_req" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreditObjet" Type="varchar" MaxLength="250" />
+    <Property Name="CreditMontant" Type="int" />
+    <Property Name="CreditTaux" Type="float" />
+    <Property Name="CreditProgramID" Type="bigint" />
+    <Property Name="CreditProgram" Type="varchar" MaxLength="50" />
+    <Property Name="DemandeEtat" Type="tinyint" />
+    <Property Name="DemandeDate" Type="datetime" />
+    <Property Name="AccountRacine" Type="varchar" MaxLength="10" />
+    <Property Name="CreditDuree" Type="int" />
+    <Property Name="PersonID" Type="bigint" />
+    <Property Name="SyncStatut" Type="tinyint" />
+    <Property Name="CreditPeriodicite" Type="tinyint" />
+    <Property Name="Reference" Type="varchar" MaxLength="10" />
+    <Property Name="SPItemID" Type="varchar" MaxLength="10" />
+    <Property Name="DemandeDossier" Type="varchar" MaxLength="50" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CreditMontantAvance" Type="int" />
+    <Property Name="CreditMontantEcheance" Type="int" />
+    <Property Name="CreditMontantLettre" Type="varchar(max)" />
+    <Property Name="CreditQuotite" Type="int" />
+  </EntityType>
+  <Association Name="FK_Client_EmployeurContrat">
+    <End Role="EmployeurContrat" Type="Self.EmployeurContrat" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeurContrat">
+        <PropertyRef Name="EmployeurContratID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="EmployeurContratID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_PieceType">
+    <End Role="PieceType" Type="Self.PieceType" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PieceType">
+        <PropertyRef Name="PieceTypeID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="PieceTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_RegimeMatrimonial">
+    <End Role="RegimeMatrimonial" Type="Self.RegimeMatrimonial" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegimeMatrimonial">
+        <PropertyRef Name="RegimeMatrimonialID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="RegimeMatrimonialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductProgramCheckList_ProductProgram">
+    <End Role="ProductProgram" Type="Self.ProductProgram" Multiplicity="0..1" />
+    <End Role="ProductProgramCheckList" Type="Self.ProductProgramCheckList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductProgram">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductProgramCheckList">
+        <PropertyRef Name="ProductProgramID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestCredOnline_DBModelStoreContainer">
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeurContrat" EntityType="Self.EmployeurContrat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fichier" EntityType="Self.Fichier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PieceType" EntityType="Self.PieceType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductProgram" EntityType="Self.ProductProgram" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductProgramCheckList" EntityType="Self.ProductProgramCheckList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegimeMatrimonial" EntityType="Self.RegimeMatrimonial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Request" EntityType="Self.Request" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Client_EmployeurContrat" Association="Self.FK_Client_EmployeurContrat">
+      <End Role="EmployeurContrat" EntitySet="EmployeurContrat" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_PieceType" Association="Self.FK_Client_PieceType">
+      <End Role="PieceType" EntitySet="PieceType" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_RegimeMatrimonial" Association="Self.FK_Client_RegimeMatrimonial">
+      <End Role="RegimeMatrimonial" EntitySet="RegimeMatrimonial" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductProgramCheckList_ProductProgram" Association="Self.FK_ProductProgramCheckList_ProductProgram">
+      <End Role="ProductProgram" EntitySet="ProductProgram" />
+      <End Role="ProductProgramCheckList" EntitySet="ProductProgramCheckList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

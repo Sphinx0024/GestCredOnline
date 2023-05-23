@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestCredOnline_DBModelStoreContainer" CdmEntityContainer="GestCredOnlineDBEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="AccountRacine" ColumnName="AccountRacine" />
+          <ScalarProperty Name="Sexe" ColumnName="Sexe" />
+          <ScalarProperty Name="Civilite" ColumnName="Civilite" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="LieuNaissance" ColumnName="LieuNaissance" />
+          <ScalarProperty Name="PieceTypeID" ColumnName="PieceTypeID" />
+          <ScalarProperty Name="PieceNumero" ColumnName="PieceNumero" />
+          <ScalarProperty Name="PieceDateEtablissement" ColumnName="PieceDateEtablissement" />
+          <ScalarProperty Name="PieceDateExpiration" ColumnName="PieceDateExpiration" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="OfficePhone" ColumnName="OfficePhone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="AddressVille" ColumnName="AddressVille" />
+          <ScalarProperty Name="AddressQuartier" ColumnName="AddressQuartier" />
+          <ScalarProperty Name="AddressLot" ColumnName="AddressLot" />
+          <ScalarProperty Name="RegimeMatrimonialID" ColumnName="RegimeMatrimonialID" />
+          <ScalarProperty Name="ConjointNom" ColumnName="ConjointNom" />
+          <ScalarProperty Name="ConjointPrenom" ColumnName="ConjointPrenom" />
+          <ScalarProperty Name="ConjointDomicil" ColumnName="ConjointDomicil" />
+          <ScalarProperty Name="ConjointPhone" ColumnName="ConjointPhone" />
+          <ScalarProperty Name="EmployeurNom" ColumnName="EmployeurNom" />
+          <ScalarProperty Name="EmployeurContratID" ColumnName="EmployeurContratID" />
+          <ScalarProperty Name="EmployeurDateEmbauche" ColumnName="EmployeurDateEmbauche" />
+          <ScalarProperty Name="Profession" ColumnName="Profession" />
+          <ScalarProperty Name="EmployeurAdrPost" ColumnName="EmployeurAdrPost" />
+          <ScalarProperty Name="EmployeurAdrGeo" ColumnName="EmployeurAdrGeo" />
+          <ScalarProperty Name="EmployeurPhone" ColumnName="EmployeurPhone" />
+          <ScalarProperty Name="Salaire" ColumnName="Salaire" />
+          <ScalarProperty Name="RevenuLocatif" ColumnName="RevenuLocatif" />
+          <ScalarProperty Name="RevenuAgricole" ColumnName="RevenuAgricole" />
+          <ScalarProperty Name="RevenuAutre" ColumnName="RevenuAutre" />
+          <ScalarProperty Name="RevenuTotal" ColumnName="RevenuTotal" />
+          <ScalarProperty Name="EmployeurDateFinContrat" ColumnName="EmployeurDateFinContrat" />
+          <ScalarProperty Name="NbEnfant" ColumnName="NbEnfant" />
+          <ScalarProperty Name="EmployeurFonction" ColumnName="EmployeurFonction" />
+          <ScalarProperty Name="EmployeurMatricule" ColumnName="EmployeurMatricule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeurContrat">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.EmployeurContrat">
+        <MappingFragment StoreEntitySet="EmployeurContrat">
+          <ScalarProperty Name="EmployeurContratID" ColumnName="EmployeurContratID" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fichier">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.Fichier">
+        <MappingFragment StoreEntitySet="Fichier">
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="SyncStatut" ColumnName="SyncStatut" />
+          <ScalarProperty Name="OnlineUrl" ColumnName="OnlineUrl" />
+          <ScalarProperty Name="CheckListID" ColumnName="CheckListID" />
+          <ScalarProperty Name="File_Data" ColumnName="File_Data" />
+          <ScalarProperty Name="File_MimeType" ColumnName="File_MimeType" />
+          <ScalarProperty Name="File_Name" ColumnName="File_Name" />
+          <ScalarProperty Name="File_Size" ColumnName="File_Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PieceType">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.PieceType">
+        <MappingFragment StoreEntitySet="PieceType">
+          <ScalarProperty Name="PieceTypeID" ColumnName="PieceTypeID" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductProgram">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.ProductProgram">
+        <MappingFragment StoreEntitySet="ProductProgram">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Taux" ColumnName="Taux" />
+          <ScalarProperty Name="Duree" ColumnName="Duree" />
+          <ScalarProperty Name="Frais" ColumnName="Frais" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+          <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+          <ScalarProperty Name="TypeDemande" ColumnName="TypeDemande" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductProgramCheckList">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.ProductProgramCheckList">
+        <MappingFragment StoreEntitySet="ProductProgramCheckList">
+          <ScalarProperty Name="CheckListID" ColumnName="CheckListID" />
+          <ScalarProperty Name="ProductProgramID" ColumnName="ProductProgramID" />
+          <ScalarProperty Name="Createur" ColumnName="Createur" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="Modificateur" ColumnName="Modificateur" />
+          <ScalarProperty Name="DateModification" ColumnName="DateModification" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegimeMatrimonial">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.RegimeMatrimonial">
+        <MappingFragment StoreEntitySet="RegimeMatrimonial">
+          <ScalarProperty Name="RegimeMatrimonialID" ColumnName="RegimeMatrimonialID" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Request">
+      <EntityTypeMapping TypeName="GestCredOnline_DBModel.Request">
+        <MappingFragment StoreEntitySet="Request">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="Ref_req" ColumnName="Ref_req" />
+          <ScalarProperty Name="CreditObjet" ColumnName="CreditObjet" />
+          <ScalarProperty Name="CreditMontant" ColumnName="CreditMontant" />
+          <ScalarProperty Name="CreditTaux" ColumnName="CreditTaux" />
+          <ScalarProperty Name="CreditProgramID" ColumnName="CreditProgramID" />
+          <ScalarProperty Name="CreditProgram" ColumnName="CreditProgram" />
+          <ScalarProperty Name="DemandeEtat" ColumnName="DemandeEtat" />
+          <ScalarProperty Name="DemandeDate" ColumnName="DemandeDate" />
+          <ScalarProperty Name="AccountRacine" ColumnName="AccountRacine" />
+          <ScalarProperty Name="CreditDuree" ColumnName="CreditDuree" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="SyncStatut" ColumnName="SyncStatut" />
+          <ScalarProperty Name="CreditPeriodicite" ColumnName="CreditPeriodicite" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="SPItemID" ColumnName="SPItemID" />
+          <ScalarProperty Name="DemandeDossier" ColumnName="DemandeDossier" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CreditMontantAvance" ColumnName="CreditMontantAvance" />
+          <ScalarProperty Name="CreditMontantEcheance" ColumnName="CreditMontantEcheance" />
+          <ScalarProperty Name="CreditMontantLettre" ColumnName="CreditMontantLettre" />
+          <ScalarProperty Name="CreditQuotite" ColumnName="CreditQuotite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

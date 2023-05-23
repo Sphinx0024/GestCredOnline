@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestCredOnline_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="PersonID" />
+    </Key>
+    <Property Name="PersonID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountRacine" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sexe" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Civilite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateNaissance" Type="DateTime" Precision="3" />
+    <Property Name="LieuNaissance" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PieceTypeID" Type="Int32" />
+    <Property Name="PieceNumero" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PieceDateEtablissement" Type="DateTime" Precision="3" />
+    <Property Name="PieceDateExpiration" Type="DateTime" Precision="3" />
+    <Property Name="HomePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OfficePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AddressVille" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AddressQuartier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AddressLot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegimeMatrimonialID" Type="Int32" />
+    <Property Name="ConjointNom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConjointPrenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConjointDomicil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConjointPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurNom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurContratID" Type="Int32" />
+    <Property Name="EmployeurDateEmbauche" Type="DateTime" Precision="3" />
+    <Property Name="Profession" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurAdrPost" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurAdrGeo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Salaire" Type="Int32" />
+    <Property Name="RevenuLocatif" Type="Int32" />
+    <Property Name="RevenuAgricole" Type="Int32" />
+    <Property Name="RevenuAutre" Type="Int32" />
+    <Property Name="RevenuTotal" Type="Int32" />
+    <Property Name="EmployeurDateFinContrat" Type="DateTime" Precision="3" />
+    <Property Name="NbEnfant" Type="Int32" />
+    <Property Name="EmployeurFonction" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurMatricule" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurProfession" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurCrade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurNbAnneeExiste" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeurEstAgree" Type="Boolean" />
+    <Property Name="EmployeurSegment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EstExploitantAgricole" Type="Boolean" />
+    <Property Name="Nationalite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EmployeurContrat" Relationship="Self.FK_Client_EmployeurContrat" FromRole="Client" ToRole="EmployeurContrat" />
+    <NavigationProperty Name="PieceType" Relationship="Self.FK_Client_PieceType" FromRole="Client" ToRole="PieceType" />
+    <NavigationProperty Name="RegimeMatrimonial" Relationship="Self.FK_Client_RegimeMatrimonial" FromRole="Client" ToRole="RegimeMatrimonial" />
+    <NavigationProperty Name="Request" Relationship="GestCredOnline_DBModel.FK_Request_Client" FromRole="Client" ToRole="Request" />
+    <Property Name="DateCompte" Type="DateTime" Precision="3" />
+    <Property Name="AcompteEpargne" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="EmployeurContrat">
+    <Key>
+      <PropertyRef Name="EmployeurContratID" />
+    </Key>
+    <Property Name="EmployeurContratID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Client_EmployeurContrat" FromRole="EmployeurContrat" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Fichier">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequestID" Type="Int64" />
+    <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SyncStatut" Type="Byte" />
+    <Property Name="OnlineUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CheckListID" Type="Int64" />
+    <Property Name="File_Data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="File_MimeType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="File_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="File_Size" Type="Int32" />
+    <NavigationProperty Name="ProductProgramCheckList" Relationship="GestCredOnline_DBModel.FK_Fichier_ProductProgramCheckList" FromRole="Fichier" ToRole="ProductProgramCheckList" />
+    <NavigationProperty Name="Request" Relationship="GestCredOnline_DBModel.FK_Fichier_Request" FromRole="Fichier" ToRole="Request" />
+  </EntityType>
+  <EntityType Name="PieceType">
+    <Key>
+      <PropertyRef Name="PieceTypeID" />
+    </Key>
+    <Property Name="PieceTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Client_PieceType" FromRole="PieceType" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="ProductProgram">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Taux" Type="Double" />
+    <Property Name="Duree" Type="Double" />
+    <Property Name="Frais" Type="Double" />
+    <Property Name="Commission" Type="Double" />
+    <Property Name="DateDebut" Type="DateTime" Precision="0" />
+    <Property Name="DateFin" Type="DateTime" Precision="0" />
+    <Property Name="Commentaires" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TypeDemande" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="ProductProgramCheckList" Relationship="Self.FK_ProductProgramCheckList_ProductProgram" FromRole="ProductProgram" ToRole="ProductProgramCheckList" />
+    <NavigationProperty Name="Request" Relationship="GestCredOnline_DBModel.FK_Request_ProductProgram" FromRole="ProductProgram" ToRole="Request" />
+  </EntityType>
+  <EntityType Name="ProductProgramCheckList">
+    <Key>
+      <PropertyRef Name="CheckListID" />
+    </Key>
+    <Property Name="CheckListID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductProgramID" Type="Int64" />
+    <Property Name="Createur" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreation" Type="DateTime" Precision="0" />
+    <Property Name="Modificateur" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateModification" Type="DateTime" Precision="0" />
+    <Property Name="Libelle" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProductProgram" Relationship="Self.FK_ProductProgramCheckList_ProductProgram" FromRole="ProductProgramCheckList" ToRole="ProductProgram" />
+    <NavigationProperty Name="Fichier" Relationship="GestCredOnline_DBModel.FK_Fichier_ProductProgramCheckList" FromRole="ProductProgramCheckList" ToRole="Fichier" />
+  </EntityType>
+  <EntityType Name="RegimeMatrimonial">
+    <Key>
+      <PropertyRef Name="RegimeMatrimonialID" />
+    </Key>
+    <Property Name="RegimeMatrimonialID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Client_RegimeMatrimonial" FromRole="RegimeMatrimonial" ToRole="Client" />
+  </EntityType>
+  <Association Name="FK_Client_EmployeurContrat">
+    <End Role="EmployeurContrat" Type="Self.EmployeurContrat" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeurContrat">
+        <PropertyRef Name="EmployeurContratID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="EmployeurContratID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_PieceType">
+    <End Role="PieceType" Type="Self.PieceType" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PieceType">
+        <PropertyRef Name="PieceTypeID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="PieceTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_RegimeMatrimonial">
+    <End Role="RegimeMatrimonial" Type="Self.RegimeMatrimonial" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegimeMatrimonial">
+        <PropertyRef Name="RegimeMatrimonialID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="RegimeMatrimonialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductProgramCheckList_ProductProgram">
+    <End Role="ProductProgram" Type="Self.ProductProgram" Multiplicity="0..1" />
+    <End Role="ProductProgramCheckList" Type="Self.ProductProgramCheckList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductProgram">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductProgramCheckList">
+        <PropertyRef Name="ProductProgramID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestCredOnline_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Client" EntityType="Self.Client" />
+    <EntitySet Name="EmployeurContrat" EntityType="Self.EmployeurContrat" />
+    <EntitySet Name="Fichier" EntityType="Self.Fichier" />
+    <EntitySet Name="PieceType" EntityType="Self.PieceType" />
+    <EntitySet Name="ProductProgram" EntityType="Self.ProductProgram" />
+    <EntitySet Name="ProductProgramCheckList" EntityType="Self.ProductProgramCheckList" />
+    <EntitySet Name="RegimeMatrimonial" EntityType="Self.RegimeMatrimonial" />
+    <AssociationSet Name="FK_Client_EmployeurContrat" Association="Self.FK_Client_EmployeurContrat">
+      <End Role="EmployeurContrat" EntitySet="EmployeurContrat" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_PieceType" Association="Self.FK_Client_PieceType">
+      <End Role="PieceType" EntitySet="PieceType" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_RegimeMatrimonial" Association="Self.FK_Client_RegimeMatrimonial">
+      <End Role="RegimeMatrimonial" EntitySet="RegimeMatrimonial" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductProgramCheckList_ProductProgram" Association="Self.FK_ProductProgramCheckList_ProductProgram">
+      <End Role="ProductProgram" EntitySet="ProductProgram" />
+      <End Role="ProductProgramCheckList" EntitySet="ProductProgramCheckList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fichier_ProductProgramCheckList" Association="GestCredOnline_DBModel.FK_Fichier_ProductProgramCheckList">
+      <End Role="ProductProgramCheckList" EntitySet="ProductProgramCheckList" />
+      <End Role="Fichier" EntitySet="Fichier" />
+    </AssociationSet>
+    <EntitySet Name="Request" EntityType="GestCredOnline_DBModel.Request" />
+    <AssociationSet Name="FK_Request_Client" Association="GestCredOnline_DBModel.FK_Request_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fichier_Request" Association="GestCredOnline_DBModel.FK_Fichier_Request">
+      <End Role="Request" EntitySet="Request" />
+      <End Role="Fichier" EntitySet="Fichier" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Request_ProductProgram" Association="GestCredOnline_DBModel.FK_Request_ProductProgram">
+      <End Role="ProductProgram" EntitySet="ProductProgram" />
+      <End Role="Request" EntitySet="Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Request_Request" Association="GestCredOnline_DBModel.FK_Request_Request">
+      <End Role="Request" EntitySet="Request" />
+      <End Role="Request1" EntitySet="Request" />
+    </AssociationSet>
+    <EntitySet Name="EntreprisesAgrees" EntityType="GestCredOnline_DBModel.EntreprisesAgrees" />
+    <EntitySet Name="Notification" EntityType="GestCredOnline_DBModel.Notification" />
+  </EntityContainer>
+  <Association Name="FK_Fichier_ProductProgramCheckList">
+    <End Type="GestCredOnline_DBModel.ProductProgramCheckList" Role="ProductProgramCheckList" Multiplicity="0..1" />
+    <End Type="GestCredOnline_DBModel.Fichier" Role="Fichier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductProgramCheckList">
+        <PropertyRef Name="CheckListID" />
+      </Principal>
+      <Dependent Role="Fichier">
+        <PropertyRef Name="CheckListID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Request">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ref_req" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreditObjet" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreditMontant" Type="Int32" />
+    <Property Name="CreditTaux" Type="Double" />
+    <Property Name="CreditProgramID" Type="Int64" />
+    <Property Name="CreditProgram" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DemandeEtat" Type="Byte" />
+    <Property Name="DemandeDate" Type="DateTime" Precision="3" />
+    <Property Name="AccountRacine" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreditDuree" Type="Int32" />
+    <Property Name="PersonID" Type="Int64" />
+    <Property Name="SyncStatut" Type="Byte" />
+    <Property Name="CreditPeriodicite" Type="Byte" />
+    <Property Name="Reference" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SPItemID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DemandeDossier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreditMontantAvance" Type="Int32" />
+    <Property Name="CreditMontantEcheance" Type="Int32" />
+    <Property Name="CreditMontantLettre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreditQuotite" Type="Double" />
+    <Property Name="Score" Type="Int32" />
+    <Property Name="Note" Type="Int32" />
+    <Property Name="Risque" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreditTauxEndettement" Type="Double" />
+    <Property Name="AcompteEpargne" Type="Boolean" />
+    <NavigationProperty Name="Client" Relationship="GestCredOnline_DBModel.FK_Request_Client" FromRole="Request" ToRole="Client" />
+    <NavigationProperty Name="Fichier" Relationship="GestCredOnline_DBModel.FK_Fichier_Request" FromRole="Request" ToRole="Fichier" />
+    <NavigationProperty Name="ProductProgram" Relationship="GestCredOnline_DBModel.FK_Request_ProductProgram" FromRole="Request" ToRole="ProductProgram" />
+    <NavigationProperty Name="Request1" Relationship="GestCredOnline_DBModel.FK_Request_Request" FromRole="Request" ToRole="Request1" />
+    <NavigationProperty Name="Request2" Relationship="GestCredOnline_DBModel.FK_Request_Request" FromRole="Request1" ToRole="Request" />
+    <Property Name="CreditDatePremVersement" Type="DateTime" Precision="3" />
+    <Property Name="AncienneteClient" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Request_Client">
+    <End Type="GestCredOnline_DBModel.Client" Role="Client" Multiplicity="0..1" />
+    <End Type="GestCredOnline_DBModel.Request" Role="Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="PersonID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="PersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fichier_Request">
+    <End Type="GestCredOnline_DBModel.Request" Role="Request" Multiplicity="0..1" />
+    <End Type="GestCredOnline_DBModel.Fichier" Role="Fichier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Request">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="Fichier">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Request_ProductProgram">
+    <End Type="GestCredOnline_DBModel.ProductProgram" Role="ProductProgram" Multiplicity="0..1" />
+    <End Type="GestCredOnline_DBModel.Request" Role="Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductProgram">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Request">
+        <PropertyRef Name="CreditProgramID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Request_Request">
+    <End Type="GestCredOnline_DBModel.Request" Role="Request" Multiplicity="1" />
+    <End Type="GestCredOnline_DBModel.Request" Role="Request1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Request">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="Request1">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EntreprisesAgrees">
+    <Key>
+      <PropertyRef Name="EntrepriseID" />
+    </Key>
+    <Property Name="EntrepriseID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RaisonSociale" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AdressePostale" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="AdresseGeographique" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="IndicatifID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="Sender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ToNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Byte" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,34 @@
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.Taxonomy.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.UserProfiles.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CoreCompileInputs.cache
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CopyComplete
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.pdb
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.Taxonomy.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\bin\Debug\Microsoft.SharePoint.Client.UserProfiles.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.pdb
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.AssemblyReference.cache
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CoreCompileInputs.cache
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.dll
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.pdb
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.dll
+E:\GestCredOnline - Copie\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\bin\Debug\GestCredOnline.Helpers.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.AssemblyReference.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.Helpers\obj\Debug\GestCredOnline.Helpers.pdb

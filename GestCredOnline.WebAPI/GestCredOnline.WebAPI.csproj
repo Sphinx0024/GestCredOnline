@@ -1,0 +1,505 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6CF2B7E-A437-42A1-AF19-6CFBEAD861FD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestCredOnline.WebAPI</RootNamespace>
+    <AssemblyName>GestCredOnline.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44384</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.OData, Version=7.5.12.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.OData.7.5.12\lib\net45\Microsoft.AspNet.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Core.7.9.0\lib\net45\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Edm.7.9.0\lib\net45\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.4.2.0\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.2.0.2\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.2.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Hosting.2.0.2\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.2.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.2.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Spatial.7.9.0\lib\net45\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.7\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\autoComplete.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\jquery-ui-1.10.0.custom.css" />
+    <Content Include="Assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\font\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\icon\feather\css\feather.css" />
+    <Content Include="Assets\icon\icofont\css\icofont.css" />
+    <Content Include="Assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="Assets\img\avatar_profile.png" />
+    <Content Include="Assets\img\bni.jfif" />
+    <Content Include="Assets\js\appConfig.js" />
+    <Content Include="Assets\js\appFolder.js" />
+    <Content Include="Assets\js\appHelper.js" />
+    <Content Include="Assets\js\autoCompletion.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\helper.js" />
+    <Content Include="Assets\js\jquery-ui.min.js" />
+    <Content Include="Assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Assets\js\jquery.min.js" />
+    <Content Include="Assets\js\jquery.slimscroll.js" />
+    <Content Include="Assets\js\modernizr.js" />
+    <Content Include="Assets\js\pcoded.min.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\SmoothScroll.js" />
+    <Content Include="Assets\js\vartical-layout.min.js" />
+    <Content Include="Assets\lib\ace\css\ace-ie.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-part2.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-rtl.min.css" />
+    <Content Include="Assets\lib\ace\css\ace-skins.min.css" />
+    <Content Include="Assets\lib\ace\css\ace.min.css" />
+    <Content Include="Assets\lib\ace\js\ace-editable.min.js" />
+    <Content Include="Assets\lib\ace\js\ace-elements.min.js" />
+    <Content Include="Assets\lib\ace\js\ace-extra.min.js" />
+    <Content Include="Assets\lib\ace\js\ace.min.js" />
+    <Content Include="Assets\lib\autoNumeric\autoNumeric.min.js" />
+    <Content Include="Assets\lib\bootbox\bootbox.js" />
+    <Content Include="Assets\lib\chosen\css\chosen.min.css" />
+    <Content Include="Assets\lib\chosen\js\chosen.jquery.min.js" />
+    <Content Include="Assets\lib\data-table\css\buttons.dataTables.min.css" />
+    <Content Include="Assets\lib\data-table\js\data-table-custom.js" />
+    <Content Include="Assets\lib\data-table\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Assets\lib\data-table\js\jszip.min.js" />
+    <Content Include="Assets\lib\data-table\js\pdfmake.min.js" />
+    <Content Include="Assets\lib\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\buttons.html5.min.js" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\buttons.print.min.js" />
+    <Content Include="Assets\lib\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="Assets\lib\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="Assets\lib\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="Assets\lib\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="Assets\lib\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="Assets\lib\gritter\css\jquery.gritter.min.css" />
+    <Content Include="Assets\lib\gritter\jquery.gritter.min.css" />
+    <Content Include="Assets\lib\gritter\jquery.gritter.min.js" />
+    <Content Include="Assets\lib\gritter\js\jquery.gritter.min.js" />
+    <Content Include="Assets\lib\jquery-validation\jquery.validate.js" />
+    <Content Include="Assets\lib\jquery.steps\jquery.steps.css" />
+    <Content Include="Assets\lib\jquery.steps\jquery.steps.js" />
+    <Content Include="Assets\lib\moment\moment.min.js" />
+    <Content Include="Assets\lib\mustache\mustache.min.js" />
+    <Content Include="Assets\lib\underscore\underscore-min.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\GestCred.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GestCred.Context.cs</LastGenOutput>
+      <DependentUpon>GestCred.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\GestCred.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GestCred.edmx</DependentUpon>
+      <LastGenOutput>GestCred.cs</LastGenOutput>
+    </Content>
+    <Content Include="Pages\index.aspx" />
+    <Content Include="Pages\login.aspx" />
+    <Content Include="Pages\simul_prospect.aspx" />
+    <Content Include="Pages\simulation.aspx" />
+    <Content Include="Pages\souscription_add.aspx" />
+    <Content Include="Pages\souscription_details.aspx" />
+    <Content Include="Pages\souscription_list.aspx" />
+    <Content Include="hcviqhsgdivqisWEB.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\ProspectController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\CreditController.cs" />
+    <Compile Include="Controllers\EmployeurContratController.cs" />
+    <Compile Include="Controllers\EntrepriseAgreeController.cs" />
+    <Compile Include="Controllers\EtatRequestController.cs" />
+    <Compile Include="Controllers\FichierController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\PieceTypeController.cs" />
+    <Compile Include="Controllers\ProductProgramCheckListController.cs" />
+    <Compile Include="Controllers\ProductProgramController.cs" />
+    <Compile Include="Controllers\RegimeMatrimonialController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\ScoringController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\h_Clients.cs" />
+    <Compile Include="Helpers\h_config.cs" />
+    <Compile Include="Helpers\h_log.cs" />
+    <Compile Include="Helpers\h_Service_Consume.cs" />
+    <Compile Include="Helpers\h_utilitaires.cs" />
+    <Compile Include="Helpers\SmsApiConfig.cs" />
+    <Compile Include="Helpers\SmsService.cs" />
+    <Compile Include="MasterPages\NoLog.master.cs">
+      <DependentUpon>NoLog.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\NoLog.master.designer.cs">
+      <DependentUpon>NoLog.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Contenu.master.cs">
+      <DependentUpon>Contenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Contenu.master.designer.cs">
+      <DependentUpon>Contenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\NoLogging.master.cs">
+      <DependentUpon>NoLogging.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\NoLogging.master.designer.cs">
+      <DependentUpon>NoLogging.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Principale.Master.cs">
+      <DependentUpon>Principale.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Principale.Master.designer.cs">
+      <DependentUpon>Principale.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Client.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmployeurContrat.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntreprisesAgrees.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EtatRequest.cs" />
+    <Compile Include="Models\Fichier.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GestCred.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestCred.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GestCred.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GestCred.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestCred.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Notification.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PieceType.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductProgram.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductProgramCheckList.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prospects.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RegimeMatrimonial.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Request.cs">
+      <DependentUpon>GestCred.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\simul_prospect.aspx.cs">
+      <DependentUpon>simul_prospect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\simul_prospect.aspx.designer.cs">
+      <DependentUpon>simul_prospect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\simulation.aspx.cs">
+      <DependentUpon>simulation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\simulation.aspx.designer.cs">
+      <DependentUpon>simulation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_add.aspx.cs">
+      <DependentUpon>souscription_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_add.aspx.designer.cs">
+      <DependentUpon>souscription_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_details.aspx.cs">
+      <DependentUpon>souscription_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_details.aspx.designer.cs">
+      <DependentUpon>souscription_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\souscription_list.aspx.cs">
+      <DependentUpon>souscription_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\souscription_list.aspx.designer.cs">
+      <DependentUpon>souscription_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\AuthorizationServerProvider.cs" />
+    <Compile Include="Providers\AuthorizeProvider.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\GestCred.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GestCred.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GestCred.edmx.diagram">
+      <DependentUpon>GestCred.edmx</DependentUpon>
+    </Content>
+    <Compile Include="App_Start\Auth.StartUp.cs" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\font\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\icon\feather\fonts\feather.woff" />
+    <Content Include="Assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="Assets\lib\mustache\README.md" />
+    <Content Include="MasterPages\Contenu.master" />
+    <Content Include="MasterPages\Principale.Master" />
+    <Content Include="MasterPages\NoLog.master" />
+    <Content Include="MasterPages\NoLogging.master" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="hcviqhsgdivqisWEB.Debug.config">
+      <DependentUpon>hcviqhsgdivqisWEB.config</DependentUpon>
+    </None>
+    <None Include="hcviqhsgdivqisWEB.Release.config">
+      <DependentUpon>hcviqhsgdivqisWEB.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
+    <Folder Include="Telechargements\" />
+    <Folder Include="Views\Default1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestCredOnline.CoreCalcul\GestCredOnline.CoreCalcul.csproj">
+      <Project>{a58bddbb-64e3-4e00-b23a-2bead0f5b4dd}</Project>
+      <Name>GestCredOnline.CoreCalcul</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GestCredOnline.Helpers\GestCredOnline.Helpers.csproj">
+      <Project>{d6f00ff2-3f11-4164-9065-88de3465e3b0}</Project>
+      <Name>GestCredOnline.Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52473</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44384/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

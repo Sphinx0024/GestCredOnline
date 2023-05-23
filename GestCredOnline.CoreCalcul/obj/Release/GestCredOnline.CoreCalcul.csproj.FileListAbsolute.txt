@@ -1,0 +1,30 @@
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.AssemblyReference.cache
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CoreCompileInputs.cache
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.pdb
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.CoreCalcul.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.CoreCalcul\obj\Release\GestCredOnline.CoreCalcul.pdb

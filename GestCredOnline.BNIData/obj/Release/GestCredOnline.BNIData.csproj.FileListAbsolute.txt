@@ -1,0 +1,42 @@
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.AssemblyReference.cache
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CoreCompileInputs.cache
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.pdb
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.xml
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.resources.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+D:\Projects\SharePoint\BNI\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.xml
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.resources.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll.config
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\GestCredOnline.BNIData.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\EntityFramework.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\EntityFramework.xml
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.resources.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.BNIData\obj\Release\GestCredOnline.BNIData.pdb

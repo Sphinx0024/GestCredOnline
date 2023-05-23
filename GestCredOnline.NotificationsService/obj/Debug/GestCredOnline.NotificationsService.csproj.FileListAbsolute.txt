@@ -1,0 +1,94 @@
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe.config
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.pdb
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.xml
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.resources.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.SuggestedBindingRedirects.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.ProjectInstaller.resources
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.SrvNotifications.resources
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.GenerateResource.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.exe
+D:\Projects\VS\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe.config
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.pdb
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.xml
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.resources.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.AssemblyReference.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.SuggestedBindingRedirects.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.ProjectInstaller.resources
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.SrvNotifications.resources
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.GenerateResource.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CoreCompileInputs.cache
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CopyComplete
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.exe
+D:\Projects\VS\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.pdb
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe.config
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.pdb
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.CoreCalcul.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.Helpers.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.pdb
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.dll.config
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.CoreCalcul.pdb
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.Helpers.pdb
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.xml
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.xml
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.xml
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.resources.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.AssemblyReference.cache
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.SuggestedBindingRedirects.cache
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.ProjectInstaller.resources
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.SrvNotifications.resources
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.GenerateResource.cache
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CoreCompileInputs.cache
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CopyComplete
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.exe
+E:\GestCredOnline - Copie\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe.config
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.exe
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.NotificationsService.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.CoreCalcul.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.Helpers.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.BNIData.dll.config
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.CoreCalcul.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\GestCredOnline.Helpers.pdb
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.xml
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.AssemblyReference.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.SuggestedBindingRedirects.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.ProjectInstaller.resources
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.SrvNotifications.resources
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.GenerateResource.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CoreCompileInputs.cache
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.csproj.CopyComplete
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.exe
+C:\Users\activ\OneDrive\Bureau\GestCredOnline\GestCredOnline.NotificationsService\obj\Debug\GestCredOnline.NotificationsService.pdb
